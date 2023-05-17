@@ -132,6 +132,14 @@ p {
   text-align: center;
 }
 
+.short-underline {
+  border: none;
+  height: 0.5px;
+  background-color: #ed1c24;
+  width: 50%;
+  margin: 0 auto;
+}
+
 .card {
   position: relative;
 }
