@@ -8,15 +8,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.header {
-  height: 100vh;
-  background-image: url(/images/handsanitizing.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  /* background-position: center; */
-}
+/* .header { */
+/* height: 100vh; */
+/* background-image: url(/images/handsanitizing.png); */
+/* background-size: contain; */
+/* background-repeat: no-repeat; */
+/* background-position: center; */
+/* } */
 
-.header::after {
+/* .header::after {
   content: "";
   background: #ed1c24;
   width: 100%;
@@ -26,12 +26,16 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
+
+/* .header {
+  height: 100vh;
+} */
 
 .navbar {
   display: flex;
   align-items: center;
-  /* padding: 20px; this is the tutorial padding */
+  padding: 20px;
 }
 
 nav {
@@ -52,10 +56,12 @@ nav ul li {
 a {
   text-decoration: none;
   color: #555;
+  /* color: #ed1c24; */
 }
 
 p {
   color: #555;
+  /* color: #ed1c24; */
 }
 
 .container {
@@ -75,16 +81,12 @@ p {
 .col-2 {
   flex-basis: 50%;
   min-width: 300px;
+  /* margin-bottom: 100px; */
 }
 
 .col-2 img {
-  /* max-width: 100%; */
-  max-width: 1000px;
-  max-height: 500px;
-  padding: 0px 120px;
-  /* width: 1000px; */
-  width: 100%;
-  /* margin: 0px 100px; */
+  max-width: 100%;
+  padding: 50px 0;
 }
 
 .col-2 h1 {
@@ -106,6 +108,10 @@ p {
 .btn:hover {
   background: #6e1b12;
 }
+
+/* .header {
+  background: radial-gradient(#fff, #ffd6d6);
+} */
 
 .header .row {
   margin-top: 150px;
