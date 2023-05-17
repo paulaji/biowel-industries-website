@@ -8,15 +8,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.header {
-  height: 100vh;
-  background-image: url(/images/handsanitizing.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  /* background-position: center; */
-}
+/* .header { */
+/* height: 100vh; */
+/* background-image: url(/images/handsanitizing.png); */
+/* background-size: contain; */
+/* background-repeat: no-repeat; */
+/* background-position: center; */
+/* } */
 
-.header::after {
+/* .header::after {
   content: "";
   background: #ed1c24;
   width: 100%;
@@ -26,12 +26,16 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
+
+/* .header {
+  height: 100vh;
+} */
 
 .navbar {
   display: flex;
   align-items: center;
-  /* padding: 20px; this is the tutorial padding */
+  padding: 20px;
 }
 
 nav {
@@ -52,10 +56,12 @@ nav ul li {
 a {
   text-decoration: none;
   color: #555;
+  /* color: #ed1c24; */
 }
 
 p {
   color: #555;
+  /* color: #ed1c24; */
 }
 
 .container {
@@ -75,16 +81,12 @@ p {
 .col-2 {
   flex-basis: 50%;
   min-width: 300px;
+  /* margin-bottom: 100px; */
 }
 
 .col-2 img {
-  /* max-width: 100%; */
-  max-width: 1000px;
-  max-height: 500px;
-  padding: 0px 120px;
-  /* width: 1000px; */
-  width: 100%;
-  /* margin: 0px 100px; */
+  max-width: 100%;
+  padding: 50px 0;
 }
 
 .col-2 h1 {
@@ -107,18 +109,55 @@ p {
   background: #6e1b12;
 }
 
+/* .header { */
+/* background: linear-gradient(to bottom, #fff, #ed1c24); */
+/* } */
+
 .header .row {
-  margin-top: 150px;
+  margin-top: 70px;
 }
 
-.categories {
-  height: 100vh;
+.categories-2 {
+  margin: 70px 0;
+}
+
+/* .categories { */
+/* height: 100vh; */
+/* } */
+
+.title-des {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.short-underline {
+  border: none;
+  height: 0.5px;
+  background-color: #ed1c24;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.card:hover img {
+  filter: none;
 }
 
 .col-3 {
-  padding: 25px 25px;
+  /* padding: 25px 25px; */
   flex-basis: 30%;
   min-width: 250px;
+  margin-bottom: 30px;
 }
 
 .col-3 img {
@@ -158,14 +197,12 @@ p {
   min-width: 200px;
   /* margin-bottom: 50px; */
   transition: transform 0.5s;
+  /* perspective: 1000px; */
+  margin-top: 75px;
 }
 
 .col-4 img {
   width: 100%;
-}
-
-.col-4 {
-  margin-top: 75px;
 }
 
 h4 {
@@ -175,8 +212,14 @@ h4 {
 }
 
 .col-4:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* transform: translateY(-3px); */
+  /* transform: scaleX(1.2); */
+  /* transform: translateY(-3px) rotate(5deg) scale(1.05); */
+  /* transform: translateY(-3px) skewX(-10deg); */
+  /* transform: translateY(-3px) rotate(3deg); */
+  transform: translateY(-3px) scale(1.05);
+  /* box-shadow: 0 0 20px rgba(237, 28, 36, 1); */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
   cursor: pointer;
 }
 
@@ -286,5 +329,60 @@ ul {
   .col-3,
   .col-4 {
     flex-basis: 100%;
+  }
+}
+
+/* ------animations------- */
+
+.wrapper {
+  display: inline-flex;
+}
+
+.wrapper .dynamic-txts {
+  overflow: hidden;
+  line-height: 90px;
+}
+
+.dynamic-txts li {
+  color: #ed1c24;
+  list-style: none;
+  /* position: relative; */
+  /* top: 0; */
+  /* animation: slide 6s steps(4) infinite; */
+}
+
+.dynamic-txts li h1 {
+  position: relative;
+  /* animation: typing 2.5s steps(20) infinite; */
+}
+
+.dynamic-txts li h1::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #ed1c24;
+  left: 0;
+  background: #fff;
+  animation: typing 2.5s steps(20) infinite;
+  /* animation: slide 6s steps(4) infinite; */
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
   }
 }

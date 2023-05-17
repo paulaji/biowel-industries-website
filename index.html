@@ -24,8 +24,8 @@
               height="70px"
             /> -->
             <img
-              src="/images/biowelindlogoreplicatecroppednobg.png"
-              width="160px"
+              src="/images/biowelindlogoresized.png"
+              width="125px"
             />
           </div>
           <nav>
@@ -41,26 +41,40 @@
         </div>
         <div class="row">
           <div class="col-2">
-            <h2>
-              We help supply your<br />cleaning/disinfection/sanitization needs.
-            </h2>
+            <span><h1>We help in keeping your Environment,</h1><h1></h1></span>
+            <div class="wrapper">
+              <ul class="dynamic-txts">
+                <!-- <li><h1>"Safe"</h1></li> -->
+                <li><h1><span id = "word">"Hygienic"</span></h1></li>
+                <!-- <li><h1>"Sanitary"</h1></li> -->
+                <!-- <li><h1>"Protected"</h1></li> -->
+              </ul>
+              <!-- <h1 class="static-txt"> 'Environments</h1> -->
+            </div>
             <p>
-              Protect your health with our top-rated sanitizers and
-              disinfectants.<br />
-              We offer a range of high-quality products to help keep your home
-              or business clean and germ-free.
+              Providing comprehensive cleaning, disinfection, and <br>sanitization solutions to create safe and healthy environments for all.
             </p>
             <a href="" class="btn">Explore Now &#8594;</a>
           </div>
-          <div class="col-2">
+          <!-- <div class="col-2"> -->
             <!-- <img src="/images/biowellogowithwhitebgresized2.jpg" /> -->
-            <img src="/images/biowelindlogoreplicatecroppedforhero2.png" />
-          </div>
+            <!-- <img src="/images/biowelindlogoherotrial.png" /> -->
+          <!-- </div> -->
         </div>
       </div>
     </div>
-    <!-- -------------------- featured categories -------------------- -->
-    <div class="categories">
+    <!-- ------------- featured categories ------------ -->
+    <div class="categories-2">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3"><img src="images/category-1.png" /></div>
+          <div class="col-3"><img src="images/category-2.png" /></div>
+          <div class="col-3"><img src="images/category-3.png" /></div>
+        </div>
+      </div>
+     </div>
+    <!-- -------------------- featured product categories -------------------- -->
+    <!-- <div class="categories">
       <div class="small-container">
         <h2 class="title">Featured Products</h2>
         <div class="row">
@@ -80,7 +94,42 @@
             <img src="/figimages/laundrycard.png" />
             <h4>Laundry</h4>
           </div>
+        </div> -->
+        <div class="categories">
+          <div class="small-container">
+            <h2 class="title">Featured Products</h2>
+            <small class="title-des">click on the desired category to explore more</small>
+            <hr class="short-underline">
+            <div class="row">
+              <div class="col-4">
+                <div class="card">
+                  <h4>House Keeping</h4>
+                  <img src="/figimages/housekeepingcard.png" />
+                </div>
+              </div>
+              <!-- Repeat the same structure for the other cards -->
+              <div class="col-4">
+                <div class="card">
+                  <h4>Disinfection</h4>
+                  <img src="/figimages/disinfectioncard.png" />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <h4>Kitchen</h4>
+                  <img src="/figimages/kitchencard.png" />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <h4>Laundry</h4>
+                  <img src="/figimages/laundrycard.png" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        
         <!-- ithaan extra add cheythe -->
         <div class="brand">
           <div class="small-container">
@@ -137,6 +186,8 @@
     </div>
 
     <!-- ----js for toggle menu--- -->
+    <script src="script.js"></script>
+
     <script>
       var MenuItems = document.getElementById("MenuItems");
       MenuItems.style.maxHeight = "0px";
