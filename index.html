@@ -27,7 +27,7 @@
             />
           </div>
           <nav>
-            <ul>
+            <ul id="MenuItems">
               <li><a href="">Home</a></li>
               <li><a href="">Products</a></li>
               <li><a href="">About</a></li>
@@ -35,6 +35,7 @@
               <!-- <li><a href="">Account</a></li> -->
             </ul>
           </nav>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"/>
         </div>
         <div class="row">
           <div class="col-2">
@@ -129,9 +130,26 @@
           property of their respective owners.
         </small>
         <small class="paul">webworks: paulajiparayil123@gmail.com</small>
-        </hr>
         </div>
       </div>
     </div>
+
+    <!-- ----js for toggle menu--- -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      
+      function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+          {
+            MenuItems.style.maxHeight = "200px"; 
+          }
+        else 
+          {
+            MenuItems.style.maxHeight = "0px";
+          }
+      }
+    </script>
+
   </body>
 </html>
