@@ -125,6 +125,26 @@ p {
 /* height: 100vh; */
 /* } */
 
+.title-des {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.card:hover img {
+  filter: none;
+}
+
 .col-3 {
   /* padding: 25px 25px; */
   flex-basis: 30%;
