@@ -224,7 +224,14 @@ h4 {
   /* box-shadow: 0 0 20px rgba(237, 28, 36, 1); */
   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
   cursor: pointer;
+  .card-text {
+    color: #ed1c24;
+  }
 }
+
+/* .card-text {
+  color: #ed1c24;
+} */
 
 /* ----------------brand---------------- */
 
@@ -287,6 +294,7 @@ h4 {
 ul {
   list-style-type: none;
 }
+/* ----------- all products ---------- */
 
 /* ----------------------responsive--------------------- */
 .menu-icon {
@@ -465,3 +473,26 @@ ul {
     cursor: pointer;
   }
 }
+
+/* -------- trying carousel ------- */
+/* .carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.row-carousel {
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.col-4-carousel {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-top: 75px;
+}
+
+.col-4-carousel:hover {
+  transform: translateY(-3px) scale(1.05);
+  cursor: pointer;
+} */
