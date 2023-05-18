@@ -36,6 +36,9 @@ body {
   display: flex;
   align-items: center;
   padding: 20px;
+  /* position: fixed; */
+  /* position: sticky; */
+  /* background: #ed1c24; */
 }
 
 nav {
@@ -298,6 +301,7 @@ ul {
     top: 70px;
     left: 0;
     background: #ed1c24;
+    /* color: #fff; */
     width: 100%;
     overflow: hidden;
     transition: max-height 0.5s;
@@ -384,5 +388,79 @@ ul {
   }
   100% {
     left: 100%;
+  }
+}
+
+/* ----------fixed nav bar ----------- */
+.NB {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 999;
+  align-items: center;
+}
+
+/* .logo-NB img {
+  vertical-align: middle;
+} */
+
+.NB {
+  flex: 1;
+  text-align: right;
+}
+
+.NB nav ul {
+  list-style-type: none;
+  /* margin: 0;
+  padding: 0;
+  overflow: hidden; */
+  display: inline-block;
+}
+
+.NB nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.NB a {
+  color: #555;
+  text-decoration: none;
+  /* font-size: 16px; */
+}
+
+.menu-icon-NB {
+  display: none;
+  width: 28px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .NB nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #ed1c24;
+    /* color: #fff; */
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  .NB nav li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .NB nav ul a {
+    color: #fff;
+  }
+
+  .NB .menu-icon-NB {
+    display: block;
+    cursor: pointer;
   }
 }
