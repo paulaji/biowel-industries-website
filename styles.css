@@ -148,12 +148,13 @@ p {
 }
 
 .card img {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   transition: filter 0.3s ease;
 }
 
 .card:hover img {
-  filter: none;
+  /* filter: blur(8px); */
+  content: url(images/defaultcard.png);
 }
 
 .col-3 {
@@ -225,7 +226,9 @@ h4 {
   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
   cursor: pointer;
   .card-text {
+    content: "hi";
     color: #ed1c24;
+    opacity: 0;
   }
 }
 
@@ -237,7 +240,12 @@ h4 {
 
 .brand {
   margin: 100px auto;
+  /* filter: grayscale(100%); */
 }
+
+/* .brand:hover {
+  filter: grayscale(0%);
+} */
 
 .col-5 {
   width: 160px;
