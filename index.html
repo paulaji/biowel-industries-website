@@ -14,31 +14,41 @@
     />
   </head>
   <body>
+    <div class="NB">
+      <div class="logo-NB">
+        <img src="/images/biowelindlogoresized.png" width="125px" />
+      </div>
+      <nav>
+        <ul id="MenuItemsNB">
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <img src="images/menu.png" class="menu-icon-NB" onclick="menutoggle()" />
+    </div>
+    
     <div class="header">
       <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <!-- <img
-              src="/images/biowellogowithwhitebg.jpg"
-              width="160px"
-              height="70px"
-            /> -->
-            <img
-              src="/images/biowelindlogoresized.png"
-              width="125px"
-            />
-          </div>
-          <nav>
-            <ul id="MenuItems">
-              <li><a href="">Home</a></li>
-              <li><a href="">Products</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
+        <!-- <div class="navbar"> -->
+          <!-- <div class="logo"> -->
+            <!-- <img -->
+              <!-- src="/images/biowelindlogoresized.png" -->
+              <!-- width="125px" -->
+            <!-- /> -->
+          <!-- </div> -->
+          <!-- <nav> -->
+            <!-- <ul id="MenuItems"> -->
+              <!-- <li><a href="">Home</a></li> -->
+              <!-- <li><a href="">Products</a></li> -->
+              <!-- <li><a href="">About</a></li> -->
+              <!-- <li><a href="">Contact</a></li> -->
               <!-- <li><a href="">Account</a></li> -->
-            </ul>
-          </nav>
-          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"/>
-        </div>
+            <!-- </ul> -->
+          <!-- </nav> -->
+          <!-- <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"/> -->
+        <!-- </div> -->
         <div class="row">
           <div class="col-2">
             <span><h1>We help in keeping your Environment,</h1><h1></h1></span>
@@ -189,7 +199,7 @@
     <script src="script.js"></script>
 
     <script>
-      var MenuItems = document.getElementById("MenuItems");
+      var MenuItems = document.getElementById("MenuItemsNB");
       MenuItems.style.maxHeight = "0px";
       
       function menutoggle(){
