@@ -398,7 +398,8 @@ ul {
   top: 0;
   width: 100%;
   background-color: #fff;
-  padding: 20px;
+  /* padding: 30px; */
+  padding: 20px 40px 20px 40px;
   z-index: 999;
   align-items: center;
 }
