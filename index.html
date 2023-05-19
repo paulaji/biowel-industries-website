@@ -15,9 +15,9 @@
   </head>
   <body>
     <div class="NB">
-      <div class="logo-NB">
+      <a href="index.html" class="logo-NB">
         <img src="images/biowelindlogoresized.png" width="125px" />
-      </div>
+      </a>
       <nav>
         <ul id="MenuItemsNB">
           <li><a href="index.html">Home</a></li>
@@ -110,33 +110,34 @@
             <h2 class="title">Featured Product Categories</h2>
             <h4 class="title-des">Our featured product categories include a wide range of supplies for various needs. Explore our selection of top-notch products in the following categories:</h4>
             <!-- <hr class="short-underline"> -->
-            <div class="row">
-              <div class="col-4">
-                <div class="card">
-                  <h4 class="card-text">House Keeping</h4>
-                  <img src="figimages/housekeepingcard.png" class="card-image" />
+              <div class="row">
+                <div class="col-4">
+                  <div class="card">
+                    <h4 class="card-text">House Keeping</h4>
+                    <img src="figimages/housekeepingcard.png" class="card-image" />
+                  </div>
                 </div>
-              </div>
-              <!-- Repeat the same structure for the other cards -->
-              <div class="col-4">
-                <div class="card">
-                  <h4 class="card-text">Disinfection</h4>
-                  <img src="figimages/disinfectioncard.png" class="card-image"/>
+                <!-- Repeat the same structure for the other cards -->
+                <div class="col-4">
+                  <div class="card">
+                    <h4 class="card-text">Disinfection</h4>
+                    <img src="figimages/disinfectioncard.png" class="card-image"/>
+                  </div>
                 </div>
-              </div>
-              <div class="col-4">
-                <div class="card">
-                  <h4 class="card-text">Kitchen</h4>
-                  <img src="figimages/kitchencard.png" class="card-image"/>
+                <div class="col-4">
+                  <div class="card">
+                    <h4 class="card-text">Kitchen</h4>
+                    <img src="figimages/kitchencard.png" class="card-image"/>
+                  </div>
                 </div>
-              </div>
-              <div class="col-4">
-                <div class="card">
-                  <h4 class="card-text">Laundry</h4>
-                  <img src="figimages/laundrycard.png" class="card-image"/>
+                <div class="col-4">
+                  <div class="card">
+                    <h4 class="card-text">Laundry</h4>
+                    <img src="figimages/laundrycard.png" class="card-image"/>
+                  </div>
                 </div>
-              </div>
             </div>
+
             <!-- <span>Explore All Products:</span> -->
             <!-- <hr class="short-underline"> -->
             <a href="products.html" class="btn-explore-all">click here to explore all products &#8594;</a>
@@ -216,6 +217,18 @@
           }
       }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">// cdn js for swiper</script>
+    <script>
+      // js for swiper      
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
+    </body>
+    </body>
   </body>
 </html>
