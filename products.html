@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+
     <link rel="stylesheet" href="products.css" />
     <link />
     <link
@@ -32,6 +33,10 @@
       </a>
       <nav>
         <ul id="MenuItemsNB">
+          <li><a class="go-to" href="#housekeeping">housekeeping</a></li>
+          <li><a class="go-to" href="#disinfection">disinfection</a></li>
+          <li><a class="go-to" href="#kitchen">kitchen</a></li>
+          <li><a class="go-to" href="#laundry">laundry</a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">All Products</a></li>
           <li><a href="about.html">About</a></li>
@@ -40,28 +45,167 @@
       </nav>
       <img src="images/menu.png" class="menu-icon-NB" onclick="menutoggle()" />
     </div>
+    <!-- --- selection of categories --- -->
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide" id="housekeeping">
+          <h2>housekeeping &#8594;</h2>
+        </div>
+        <div class="swiper-slide">
+          <h2>
+            housekeeping &#8594;
+            <span class="inner-heading">surface &#8594;</span>
+          </h2>
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="slider-images"
+            src="productimages/housekeeping/surface/blitzcitro.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="slider-images"
+            src="productimages/housekeeping/surface/rossgc.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="slider-images"
+            src="productimages/housekeeping/surface/buzrofreshcitralbr.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <h2>
+            housekeeping &#8594;
+            <span class="inner-heading">sanitary &#8594;</span>
+          </h2>
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="slider-images"
+            src="productimages/housekeeping/sanitary/rosstc.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="slider-images"
+            src="productimages/housekeeping/sanitary/bucal.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="slider-images"
+            src="productimages/housekeeping/sanitary/rosswr.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <h2>
+            housekeeping &#8594;
+            <span class="inner-heading">floor &#8594;</span>
+          </h2>
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="slider-images"
+            src="productimages/housekeeping/floor/rossfcs.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="slider-images"
+            src="productimages/housekeeping/floor/indusmasterstrong.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="slider-images"
+            src="productimages/housekeeping/floor/rossfch.png"
+          />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="disinfection">
+          <h2>disinfection &#8594;</h2>
+        </div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
         <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
-
+    <div class="swiper mySwiper3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="kitchen">
+          <h2>kitchen &#8594;</h2>
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper mySwiper4">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="laundry">
+          <h2>laundry &#8594;</h2>
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        rewind: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper3 = new Swiper(".mySwiper3", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper4 = new Swiper(".mySwiper4", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
       });
     </script>
