@@ -32,6 +32,16 @@ body {
   text-decoration: none;
 }
 
+#housekeeping,
+#kitchen {
+  background-color: #f8f8ff;
+}
+
+#disinfection,
+#laundry {
+  background-color: #e8e8e8;
+}
+
 .swiper-slide img {
   max-height: 500px;
   max-width: 500px;
@@ -130,5 +140,57 @@ body {
   .swiper-slide img {
     max-height: 400px;
     max-width: 400px;
+  }
+}
+
+/* .scroll-down-popup {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ddcccc;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 10px;
+  z-index: 999;
+}
+
+@media only screen and (max-width: 800px) {
+  .scroll-down-popup {
+    display: block;
+  }
+} */
+
+.scroll-down-popup {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 10px;
+  z-index: 999;
+  animation: jumpUpDown 2s infinite;
+}
+
+@keyframes jumpUpDown {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-3px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .scroll-down-popup {
+    display: block;
   }
 }
