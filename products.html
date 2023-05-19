@@ -222,5 +222,31 @@
         }
       }
     </script>
+    <script>
+      // Get the scroll-down-popup element
+      const scrollDownPopup = document.querySelector(".scroll-down-popup");
+
+      // Function to check if the user has scrolled to the bottom of the page
+      function isAtBottom() {
+        return (
+          window.innerHeight + window.scrollY >=
+          document.documentElement.scrollHeight
+        );
+      }
+
+      // Function to handle the scroll event
+      function handleScroll() {
+        if (isAtBottom()) {
+          // Hide the scroll-down-popup element when at the bottom of the page
+          scrollDownPopup.style.display = "none";
+        } else {
+          // Show the scroll-down-popup element if not at the bottom of the page
+          scrollDownPopup.style.display = "block";
+        }
+      }
+
+      // Attach the scroll event listener
+      window.addEventListener("scroll", handleScroll);
+    </script>
   </body>
 </html>
