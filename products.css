@@ -1,48 +1,118 @@
-.slide-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1120px;
-  background-color: grey;
-  padding: 40px;
-  /* min-height: 100vh; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.product-card-image {
+body,
+html {
   position: relative;
-  height: 400px;
-  width: 400px;
-  padding: 3px;
-  /* border: 1px solid black; */
-}
-
-.product-card-image .card-img {
   height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  /* font-size: 14px;
+  color: #000; */
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
   width: 100%;
-  object-fit: contain;
-  /* border: 2px solid #555; */
+  height: 100%;
 }
 
-.product-card {
-  border-radius: 10px;
-  background-color: #f8f8ff;
-  border: 1px solid black;
-}
-
-.slide-content {
-  margin: 0 40px;
-}
-
-.image-content,
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 10px;
-}
-
-.name {
+.swiper-slide {
+  text-align: center;
   font-size: 18px;
-  font-weight: 500;
-  color: #333;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ----navbar---- */
+
+.NB {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  /* padding: 30px; */
+  padding: 20px 40px 20px 40px;
+  z-index: 999;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.NB {
+  flex: 1;
+  text-align: right;
+}
+
+.NB .logo-NB {
+  margin-right: auto; /* Pushes the logo to the left */
+}
+
+.NB nav ul {
+  list-style-type: none;
+  /* margin: 0;
+    padding: 0;
+    overflow: hidden; */
+  display: inline-block;
+}
+
+.NB nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.NB a {
+  color: #555;
+  text-decoration: none;
+  /* font-size: 16px; */
+}
+
+.menu-icon-NB {
+  display: none;
+  width: 28px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .NB nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #ed1c24;
+    /* color: #fff; */
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  .NB nav li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .NB nav ul a {
+    color: #fff;
+  }
+
+  .NB .menu-icon-NB {
+    display: block;
+    cursor: pointer;
+  }
 }
