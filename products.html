@@ -2,25 +2,94 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Biowel Industries | good to great</title>
+    <link rel="icon" href="images/biowelindlogoreplicatecroppednobg.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="products.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>products njan add cheytholaam</h1>
     <div class="NB">
-      <div class="logo-NB">
+      <a href="index.html" class="logo-NB">
         <img src="images/biowelindlogoresized.png" width="125px" />
-      </div>
+      </a>
       <nav>
         <ul id="MenuItemsNB">
           <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li><a href="products.html">All Products</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <img src="images/menu.png" class="menu-icon-NB" onclick="menutoggle()" />
     </div>
+    <!-- -------------------- brand-------------------- -->
+    <div class="brand">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="/images/buzillogo.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----- all products ----- -->
+
+    <!-- --------------------- footer -------------------- -->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Quality Cleanliness Supplies</h3>
+            <p>contact us for your cleanliness needs</p>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/biowelindlogowhite.png" />
+          </div>
+          <div class="footer-col-3">
+            <h3>Contact</h3>
+            <ul>
+              <li>+91 1234567899</li>
+              <li>Kizhakkambalam P.O.</li>
+              <li>PIN: 655342</li>
+              <li>biowel@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <small class="trademarksentence">
+          © 2022 Biowel Inc. All rights reserved. All trademarks are the
+          property of their respective owners.
+        </small>
+        <small class="paul">webworks: paulajiparayil123@gmail.com</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----js for toggle menu--- -->
+    <script src="script.js"></script>
+
+    <script>
+      var MenuItems = document.getElementById("MenuItemsNB");
+      MenuItems.style.maxHeight = "0px";
+      
+      function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+          {
+            MenuItems.style.maxHeight = "200px"; 
+          }
+        else 
+          {
+            MenuItems.style.maxHeight = "0px";
+          }
+      }
+      </script>
   </body>
 </html>
