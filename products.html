@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biowel Industries | good to great</title>
-    <link rel="icon" href="images/biowelindlogoreplicatecroppednobg.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="products.css" />
+    <link />
+    <link
+      rel="icon"
+      href="images/biowelindlogoreplicatecroppednobg.png"
+      type="image/x-icon"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <div class="NB">
       <a href="index.html" class="logo-NB">
@@ -29,67 +40,42 @@
       </nav>
       <img src="images/menu.png" class="menu-icon-NB" onclick="menutoggle()" />
     </div>
-    <!-- -------------------- brand-------------------- -->
-    <div class="brand">
-      <div class="small-container">
-        <div class="row">
-          <div class="col-5">
-            <img src="/images/buzillogo.png" />
-          </div>
-        </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
       </div>
-    </div>
-    <!-- ----- all products ----- -->
-
-    <!-- --------------------- footer -------------------- -->
-
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col-1">
-            <h3>Quality Cleanliness Supplies</h3>
-            <p>contact us for your cleanliness needs</p>
-          </div>
-          <div class="footer-col-2">
-            <img src="images/biowelindlogowhite.png" />
-          </div>
-          <div class="footer-col-3">
-            <h3>Contact</h3>
-            <ul>
-              <li>+91 1234567899</li>
-              <li>Kizhakkambalam P.O.</li>
-              <li>PIN: 655342</li>
-              <li>biowel@gmail.com</li>
-            </ul>
-          </div>
-        </div>
-        <hr>
-        <small class="trademarksentence">
-          © 2022 Biowel Inc. All rights reserved. All trademarks are the
-          property of their respective owners.
-        </small>
-        <small class="paul">webworks: paulajiparayil123@gmail.com</small>
-        </div>
-      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
 
-    <!-- ----js for toggle menu--- -->
-    <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        rewind: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script>
       var MenuItems = document.getElementById("MenuItemsNB");
       MenuItems.style.maxHeight = "0px";
-      
-      function menutoggle(){
-        if(MenuItems.style.maxHeight == "0px")
-          {
-            MenuItems.style.maxHeight = "200px"; 
-          }
-        else 
-          {
-            MenuItems.style.maxHeight = "0px";
-          }
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
       }
-      </script>
+    </script>
   </body>
 </html>
