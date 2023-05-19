@@ -13,7 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9.3.2/modules/scrollbar/scrollbar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   </head>
+  
   <body>
     <div class="NB">
       <a href="index.html" class="logo-NB">
@@ -32,15 +36,64 @@
     <!-- -------------------- brand-------------------- -->
     <div class="brand">
       <div class="small-container">
-        <div class="row">
-          <div class="col-5">
-            <img src="/images/buzillogo.png" />
+          <div class="row">
+            <div class="col-5">
+                <img src="/images/buzillogo.png" />
+              </div>
           </div>
-        </div>
       </div>
     </div>
     <!-- ----- all products ----- -->
 
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="product-card swiper-slide">
+            <div class="image-content">
+              <div class="product-card-image">
+                <img src="productimages/housekeeping/surface/blitzcitro.png" alt="" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="name">housekeeping -> surface</h3>
+            </div>
+          </div>
+          <div class="product-card swiper-slide">
+            <div class="image-content">
+              <div class="product-card-image">
+                <img src="productimages/housekeeping/surface/blitzcitro.png" alt="" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="name">housekeeping -> surface</h3>
+            </div>
+          </div>
+          <div class="product-card swiper-slide">
+            <div class="image-content">
+              <div class="product-card-image">
+                <img src="productimages/housekeeping/surface/blitzcitro.png" alt="" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="name">housekeeping -> surface</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- -------------------- brand-------------------- -->
+    <div class="brand">
+      <div class="small-container">
+          <div class="row">
+            <div class="col-5">
+                <img src="/images/buzillogo.png" />
+             </div>
+          </div>
+      </div>
+    </div>
+    
+    
     <!-- --------------------- footer -------------------- -->
 
     <div class="footer">
@@ -74,7 +127,11 @@
     </div>
 
     <!-- ----js for toggle menu--- -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.3.2/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 
     <script>
       var MenuItems = document.getElementById("MenuItemsNB");
@@ -91,5 +148,17 @@
           }
       }
       </script>
+        <script>
+          var swiper = new Swiper(".slide-content", {
+            slidesPerView: 4,
+            centeredSlides: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script>
   </body>
 </html>
