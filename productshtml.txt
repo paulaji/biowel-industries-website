@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Biowel Industries | good to great</title>
+    <title>Swiper demo</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
@@ -45,18 +45,13 @@
       </nav>
       <img src="images/menu.png" class="menu-icon-NB" onclick="menutoggle()" />
     </div>
-    <div class="scroll-down-popup">
-      scroll down to explore more products &darr;
-    </div>
+    <div class="scroll-down-popup">scroll down to explore more &darr;</div>
     <!-- --- selection of categories --- -->
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide" id="housekeeping">
-          <span
-            >swipe right to explore
-            <h2>housekeeping products &#8594;</h2></span
-          >
+          <h2>housekeeping &#8594;</h2>
         </div>
         <div class="swiper-slide">
           <h2>
@@ -162,10 +157,7 @@
     <div class="swiper mySwiper2">
       <div class="swiper-wrapper">
         <div class="swiper-slide" id="disinfection">
-          <span
-            >swipe right to explore
-            <h2>disinfection products &#8594;</h2></span
-          >
+          <h2>disinfection &#8594;</h2>
         </div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
@@ -183,10 +175,7 @@
     <div class="swiper mySwiper3">
       <div class="swiper-wrapper">
         <div class="swiper-slide" id="kitchen">
-          <span
-            >swipe right to explore
-            <h2>kitchen cleaning products &#8594;</h2></span
-          >
+          <h2>kitchen &#8594;</h2>
         </div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
@@ -204,10 +193,7 @@
     <div class="swiper mySwiper4">
       <div class="swiper-wrapper">
         <div class="swiper-slide" id="laundry">
-          <span
-            >swipe right to explore
-            <h2>laundry products &#8594;</h2></span
-          >
+          <h2>laundry &#8594;</h2>
         </div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
@@ -278,7 +264,7 @@
 
       function menutoggle() {
         if (MenuItems.style.maxHeight == "0px") {
-          MenuItems.style.maxHeight = "400px";
+          MenuItems.style.maxHeight = "200px";
         } else {
           MenuItems.style.maxHeight = "0px";
         }

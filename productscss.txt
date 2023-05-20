@@ -14,7 +14,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: #fff;
   /* font-size: 14px;
-    color: #000; */
+  color: #000; */
   margin: 0;
   padding: 0;
 }
@@ -32,27 +32,14 @@ body {
   text-decoration: none;
 }
 
-#housekeeping {
-  /* background-color: #c8c8c8; */
-  /* background-color: #fca4b3; */
-  /* background: radial-gradient(#c8c8c8, #646464); */
-  background: linear-gradient(to right, #c8c8c8, #87ceeb);
-}
-
+#housekeeping,
 #kitchen {
-  background: linear-gradient(to right, #c8c8c8, #f9ffa5);
-  /* background: linear-gradient(to right, #c8c8c8, #ffd1dc); */
+  background-color: #e8e8e8;
 }
 
-#disinfection {
-  /* background-color: #e8e8e8; */
-  background: linear-gradient(to right, #c8c8c8, #98fb98);
-  /* background: linear-gradient(to right, #fffaa5, #a5d8ff); */
-}
-
+#disinfection,
 #laundry {
-  background: linear-gradient(to right, #c8c8c8, #ffa5fc);
-  /* background: linear-gradient(to right, #d2c1ff, #ffe6d2); */
+  background-color: #c8c8c8;
 }
 
 .swiper-slide img {
@@ -68,7 +55,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fffff0;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,8 +88,8 @@ body {
 .NB nav ul {
   list-style-type: none;
   /* margin: 0;
-      padding: 0;
-      overflow: hidden; */
+    padding: 0;
+    overflow: hidden; */
   display: inline-block;
 }
 
@@ -135,7 +122,7 @@ body {
     transition: max-height 0.5s;
   }
 
-  .NB nav ul li {
+  .NB nav li {
     display: block;
     margin-right: 50px;
     margin-top: 10px;
@@ -157,24 +144,24 @@ body {
 }
 
 /* .scroll-down-popup {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ddcccc;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 10px;
+  z-index: 999;
+}
+
+@media only screen and (max-width: 800px) {
+  .scroll-down-popup {
     display: block;
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ddcccc;
-    color: #000000;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 10px;
-    z-index: 999;
   }
-  
-  @media only screen and (max-width: 800px) {
-    .scroll-down-popup {
-      display: block;
-    }
-  } */
+} */
 
 .scroll-down-popup {
   display: block;
