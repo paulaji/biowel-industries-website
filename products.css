@@ -228,3 +228,34 @@ body {
     display: block;
   }
 }
+
+/* ----extra work---- */
+/* ----reference---- */
+/* #housekeeping {
+  background: linear-gradient(to right, #c8c8c8, #87ceeb);
+}
+#kitchen {
+  background: linear-gradient(to right, #c8c8c8, #f9ffa5);
+}
+#disinfection {
+  background: linear-gradient(to right, #c8c8c8, #98fb98);
+}
+#laundry {
+  background: linear-gradient(to right, #c8c8c8, #ffa5fc);
+} */
+
+.housekeepingbg {
+  background: linear-gradient(to right, #c8c8c8, #87ceeb);
+}
+
+.disinfectionbg {
+  background: linear-gradient(to right, #c8c8c8, #98fb98);
+}
+
+.kitchenbg {
+  background: linear-gradient(to right, #c8c8c8, #f9ffa5);
+}
+
+.laundrybg {
+  background: linear-gradient(to right, #c8c8c8, #ffa5fc);
+}
