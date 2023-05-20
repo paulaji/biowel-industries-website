@@ -569,8 +569,8 @@ ul {
   padding: 8px 12px; /* Adjust the padding as desired */
   margin-top: 25px;
   /* background-color: #ed1c24; */
-  background-color: #fff;
-  color: #ed1c24;
+  /* background-color: #fff; */
+  /* color: #ed1c24; */
   text-decoration: none;
   border-radius: 4px;
   font-weight: lighter;
@@ -581,7 +581,42 @@ ul {
 
 .btn-explore-all:hover {
   /* background-color: #6e1b12; */
-  color: #6e1b12;
+  background: rgb(179, 33, 17);
 }
 
-/* ----- products page ----- */
+/* ----- extra work ----- */
+.categories-2 {
+  /* background: linear-gradient(to right, #6e1b12, #fff); */
+  /* background: repeating-linear-gradient(to right, #ed1c24, #210c0c 50px); */
+  /* background: repeating-linear-gradient(to right, #f9b5b7, #f1d8d9 50px); */
+  /* background: conic-gradient(from 45deg, #6e1b12, #fff); */
+  /* background: repeating-linear-gradient(to right, #ed1c23, #210c0c 50px); */
+  /* background: repeating-linear-gradient(to right, #f59193, #503434 50px); */
+  /* background: repeating-linear-gradient(to right, #f9c8c9, #593e3e 50px); */
+  /* background: linear-gradient(to right, #ffdde1, #fde2e6); */
+  /* background: linear-gradient(to right, #d9f4d9, #e8f8e8); */
+  /* background: linear-gradient(to right, #e0e0e0, #f2f2f2); */
+  background: linear-gradient(to right, #ffcc99, #ffddbb);
+  /* background: linear-gradient(to right, #c9a9c9, #e2cfe2); */
+  /* background: linear-gradient(to right, #d9c7a9, #e8ddb9); */
+  /* background: linear-gradient(to right, #a7e9af, #c5f2c7); */
+  /* background: linear-gradient(to right, #a7c8db, #c3d9e5); */
+  /* background: repeating-linear-gradient(to right, #d9f4d9, #e8f8e8 50px); */
+}
+
+.categories-2 img {
+  margin-top: 25px;
+}
+
+.col-4 {
+  background: #fff;
+}
+
+.col-4 {
+  margin-bottom: 25px;
+}
+
+.btn-explore-all {
+  background: #ed1c24;
+  color: #fff;
+}
