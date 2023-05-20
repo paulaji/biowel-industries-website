@@ -155,6 +155,7 @@ p {
 }
 
 .card:hover img {
+  /* animation: slide-in 1s ease; */
   /* content: url(images/defaultcard.png); */
   filter: blur(0px);
 }
@@ -162,6 +163,49 @@ p {
 .card:hover .link-to-productpage h4 {
   color: #ed1c24;
   text-align: center;
+  /* animation: blink 2s infinite; */
+  /* animation: fade-in 1s ease-in; */
+  animation: slide-in 1s ease;
+  /* animation: slide-right 1s ease; */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-2.5%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(2.5%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .col-3 {
@@ -236,8 +280,10 @@ h4 {
   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
   cursor: pointer;
   .card-text {
-    color: #ed1c24;
+    /* color: #ed1c24; */
     opacity: 1;
+    animation: slide-in 1s ease;
+    /* animation: slide-right 1s ease; */
   }
   border: 0px solid black;
   box-shadow: 0 0 5px rgba(0, 0, 0, 1); /* Add box-shadow property */
