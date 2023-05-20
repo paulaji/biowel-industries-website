@@ -473,7 +473,7 @@ ul {
     transition: max-height 0.5s;
   }
 
-  .NB nav li {
+  .NB nav ul li {
     display: block;
     margin-right: 50px;
     margin-top: 10px;
