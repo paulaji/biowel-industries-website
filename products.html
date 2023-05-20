@@ -150,6 +150,8 @@
           />
         </div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
     <div class="swiper mySwiper2">
@@ -166,6 +168,8 @@
         <div class="swiper-slide">Slide 8</div>
         <div class="swiper-slide">Slide 9</div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
     <div class="swiper mySwiper3">
@@ -182,6 +186,8 @@
         <div class="swiper-slide">Slide 8</div>
         <div class="swiper-slide">Slide 9</div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
     <div class="swiper mySwiper4">
@@ -198,6 +204,8 @@
         <div class="swiper-slide">Slide 8</div>
         <div class="swiper-slide">Slide 9</div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
     <!-- Swiper JS -->
@@ -211,12 +219,20 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
       var swiper2 = new Swiper(".mySwiper2", {
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
       var swiper3 = new Swiper(".mySwiper3", {
@@ -225,12 +241,20 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
       var swiper4 = new Swiper(".mySwiper4", {
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
