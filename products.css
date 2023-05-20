@@ -55,10 +55,19 @@ body {
   /* background: linear-gradient(to right, #d2c1ff, #ffe6d2); */
 }
 
+.swiper small {
+  color: #333333;
+}
+
 .swiper-slide img {
   max-height: 500px;
   max-width: 500px;
 }
+
+/* .swiper-slide img:hover {
+  max-height: 700px;
+  max-width: 700px;
+} */
 
 .swiper {
   width: 100%;
@@ -157,6 +166,11 @@ body {
     max-height: 400px;
     max-width: 400px;
   }
+
+  /* .swiper-slide img:hover {
+    max-height: 600px;
+    max-width: 600px;
+  } */
 }
 
 /* .scroll-down-popup {
