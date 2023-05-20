@@ -68,7 +68,10 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fffff0;
+  /* background: #fffff0; */
+  background: #c6d7c9;
+  /* background: linear-gradient(to right, #c8c8c8, #ffa5fc); */
+  /* background: linear-gradient(to right, #87ceeb, #c8c8c8); */
   display: flex;
   justify-content: center;
   align-items: center;
