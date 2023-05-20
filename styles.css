@@ -155,8 +155,13 @@ p {
 }
 
 .card:hover img {
-  /* filter: blur(8px); */
-  content: url(images/defaultcard.png);
+  /* content: url(images/defaultcard.png); */
+  filter: blur(0px);
+}
+
+.card:hover .link-to-productpage h4 {
+  color: #ed1c24;
+  text-align: center;
 }
 
 .col-3 {
@@ -231,9 +236,8 @@ h4 {
   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
   cursor: pointer;
   .card-text {
-    content: "hi";
     color: #ed1c24;
-    opacity: 0;
+    opacity: 1;
   }
   border: 0px solid black;
   box-shadow: 0 0 5px rgba(0, 0, 0, 1); /* Add box-shadow property */
