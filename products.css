@@ -163,8 +163,8 @@ body {
   }
 
   .swiper-slide img {
-    max-height: 400px;
-    max-width: 400px;
+    height: 200px;
+    width: 200px;
   }
 
   /* .swiper-slide img:hover {
@@ -258,4 +258,9 @@ body {
 
 .laundrybg {
   background: linear-gradient(to right, #c8c8c8, #ffa5fc);
+}
+
+/* ----new proposed changes---- */
+.NB {
+  background: rgb(255, 255, 245);
 }
