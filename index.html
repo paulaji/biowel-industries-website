@@ -75,6 +75,10 @@
     </div>
     <!-- ------------- featured categories ------------ -->
     <div class="categories-2">
+      <!-- <div class="changing-texts">
+        <h3><span class="info-heading">Info:</span> Check out our products in the <a href="products.html" class="all-products-text"> 'All Products'</a> page</h3>
+        <h3 id="changingText">All your cleaning solutions right under one place!</h3>
+      </div> -->
       <div class="small-container">
         <div class="row">
           <div class="col-3"><img src="images/category-1.png" /></div>
@@ -223,7 +227,42 @@
           }
       }
     </script>
-    </body>
-    </body>
+    <script>// Get the reference to the changingText element
+      const changingText = document.getElementById("changingText");
+      
+      // Define an array of texts to cycle through
+      const texts = [
+        "Discover a myriad of cleaning remedies at your fingertips!",
+        "Explore an extensive array of cleaning solutions for your every need!",
+        "contact us now",
+        // Add more texts as needed
+      ];
+      
+      // Define the interval duration (in milliseconds)
+      const intervalDuration = 3000; // Change the text every 2 seconds
+      
+      // Initialize the index to keep track of the current text
+      let currentIndex = 0;
+      
+      // Function to update the text
+      function updateText() {
+        // Set the current text
+        changingText.textContent = texts[currentIndex];
+      
+        // Increment the index for the next text
+        currentIndex++;
+      
+        // If the index exceeds the length of the array, reset it to 0
+        if (currentIndex >= texts.length) {
+          currentIndex = 0;
+        }
+      }
+      
+      // Call the updateText function initially
+      updateText();
+      
+      // Set an interval to update the text periodically
+      setInterval(updateText, intervalDuration);
+    </script>
   </body>
 </html>

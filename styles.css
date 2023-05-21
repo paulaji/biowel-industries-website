@@ -670,3 +670,57 @@ body {
 .col-4 {
   background: rgb(255, 255, 245);
 }
+
+.categories-2 {
+  text-align: center;
+}
+
+.info-heading {
+  color: #ed1c24;
+}
+
+.categories-2 h3 {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-weight: 400;
+  /* border: 1px solid black; */
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1px;
+}
+
+#changingText {
+  color: darkslategray;
+}
+
+.categories-2 .all-products-text {
+  /* color: blue; */
+  color: #ed1c24;
+  animation: blink 1s infinite;
+}
+
+.categories-2 .all-products-text:hover {
+  animation: none;
+  cursor: pointer;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.changing-texts {
+  /* background: #555; */
+  background-color: rgb(243, 229, 171);
+}
+
+.header {
+  background-image: url(images/pexels-cottonbro-studio-3942924.jpg);
+}
