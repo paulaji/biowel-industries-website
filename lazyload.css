@@ -37,9 +37,27 @@
   animation: nav-load 1500ms ease-out;
 }
 
-.header {
+.col-2 h1 {
   opacity: 0;
   animation: fade-load 1500ms 500ms forwards;
+  /* animation: nav-load 2000ms ease-out; */
+}
+
+.col-2 ul {
+  opacity: 0;
+  animation: fade-load 2000ms 500ms forwards;
+  /* animation: nav-load 2000ms ease-out; */
+}
+
+.col-2 p {
+  opacity: 0;
+  animation: fade-load 2500ms 500ms forwards;
+  /* animation: nav-load 2000ms ease-out; */
+}
+
+.col-2 a {
+  opacity: 0;
+  animation: fade-load 3000ms 500ms forwards;
   /* animation: nav-load 2000ms ease-out; */
 }
 
