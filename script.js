@@ -1,4 +1,7 @@
-const words = ["Safe", "Hygienic", "Protected", "Sanitary"];
+////////////////////////////////////////////////////////////////
+const words = [`"Hygienic"`];
+// const words = ["Safe", "Protected", "Hygienic", "Sanitary"];
+// const words = ["Hygienic", "Sanitary", "Protected"];
 let index = 0;
 
 function animateWords() {
@@ -16,6 +19,8 @@ function animateWords() {
 }
 
 animateWords();
+
+//////////////////////////////////////////////////////////////////
 
 // // JavaScript to handle carousel functionality
 // const carousel = document.querySelector(".carousel");
@@ -79,3 +84,5 @@ document.querySelector(".btn").addEventListener("click", function (event) {
   const targetSection = document.querySelector("#section");
   targetSection.scrollIntoView({ behavior: "smooth" });
 });
+
+////////////////////////////////////////////////////////////////////////
