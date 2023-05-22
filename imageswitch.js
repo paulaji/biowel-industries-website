@@ -45,4 +45,4 @@ function switchImages() {
 }
 
 // Call the switchImages function every 3 seconds
-setInterval(switchImages, 3000);
+setInterval(switchImages, 2000);

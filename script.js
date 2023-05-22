@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////
-// const words = [`Hygienic`];
-const words = ["Safe", "Protected", "Hygienic", "Sanitary"];
+const words = [`"Hygienic"`];
+// const words = ["Safe", "Protected", "Hygienic", "Sanitary"];
 // const words = ["Hygienic", "Sanitary", "Protected"];
 let index = 0;
 

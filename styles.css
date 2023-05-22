@@ -446,7 +446,7 @@ ul {
   border-left: 2px solid #ffffff;
   left: 0;
   background: #ed1c24;
-  animation: typing 2.5s steps(20) infinite;
+  animation: typing 5s steps(50) infinite;
   /* animation: slide 6s steps(4) infinite; */
 }
 
