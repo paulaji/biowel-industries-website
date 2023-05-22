@@ -602,12 +602,12 @@ ul {
   /* background: linear-gradient(to right, #ffdde1, #fde2e6); */
   /* background: linear-gradient(to right, #d9f4d9, #e8f8e8); */
   /* background: linear-gradient(to right, #e0e0e0, #f2f2f2); */
-  background: linear-gradient(to right, #ffcc99, #ffddbb);
   /* background: linear-gradient(to right, #c9a9c9, #e2cfe2); */
   /* background: linear-gradient(to right, #d9c7a9, #e8ddb9); */
   /* background: linear-gradient(to right, #a7e9af, #c5f2c7); */
   /* background: linear-gradient(to right, #a7c8db, #c3d9e5); */
   /* background: repeating-linear-gradient(to right, #d9f4d9, #e8f8e8 50px); */
+  background: linear-gradient(to right, #ffcc99, #ffddbb);
 }
 
 .categories-2 img {
@@ -724,3 +724,16 @@ body {
 .header {
   background-image: url(images/pexels-cottonbro-studio-3942924.jpg);
 }
+
+/* .contact-info .col-2 {
+  background: darkgray;
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  color: #ed1c24;
+}
+
+.contact-info p {
+  font-size: medium;
+  color: black;
+} */

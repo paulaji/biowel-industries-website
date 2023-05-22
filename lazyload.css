@@ -1,0 +1,56 @@
+.contact-info .col-2 {
+  background: darkgray;
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  color: #ed1c24;
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+}
+
+.contact-info p {
+  font-size: medium;
+  color: black;
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fade-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.NB {
+  animation: nav-load 1500ms ease-out;
+}
+
+.header {
+  opacity: 0;
+  animation: fade-load 1500ms 500ms forwards;
+  /* animation: nav-load 2000ms ease-out; */
+}
+
+.categories-2 {
+  opacity: 0;
+  animation: fade-load 2000ms 1000ms forwards;
+}
+
+.small-container-1 {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
