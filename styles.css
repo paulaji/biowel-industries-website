@@ -257,6 +257,7 @@ p {
   transition: transform 0.5s;
   /* perspective: 1000px; */
   margin-top: 75px;
+  /* border: 1px solid black; */
   /* border: 1px solid #ed1c24; */
   border-radius: 10px; /* Add border-radius property */
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Add box-shadow property */
@@ -284,11 +285,11 @@ h4 {
   cursor: pointer;
   .card-text {
     /* color: #ed1c24; */
-    opacity: 1;
+    /* opacity: 1; */
     animation: slide-in 1s ease;
     /* animation: slide-right 1s ease; */
   }
-  border: 0px solid black;
+  /* border: 1px solid black; */
   box-shadow: 0 0 5px rgba(0, 0, 0, 1); /* Add box-shadow property */
 }
 
@@ -607,7 +608,8 @@ ul {
   /* background: linear-gradient(to right, #a7e9af, #c5f2c7); */
   /* background: linear-gradient(to right, #a7c8db, #c3d9e5); */
   /* background: repeating-linear-gradient(to right, #d9f4d9, #e8f8e8 50px); */
-  background: linear-gradient(to right, #ffcc99, #ffddbb);
+  /* background: linear-gradient(to right, #ffcc99, #ffddbb); */
+  background: linear-gradient(to right, #e69966, #e6b387);
 }
 
 .categories-2 img {
@@ -616,6 +618,7 @@ ul {
 
 .col-4 {
   background: #fff;
+  /* background: #e6b387; */
 }
 
 .col-4 {
@@ -665,11 +668,14 @@ ul {
 body {
   /* color: rgb(248, 248, 255); */
   background: rgb(255, 252, 232);
+  /* background: rgb(225, 222, 200); */
+  /* background: rgb(195, 192, 167); */
+  /* background: rgb(185, 176, 145); */
 }
 
-.col-4 {
-  background: rgb(255, 255, 245);
-}
+/* .col-4 {
+  background: #f2cda2;
+} */
 
 .categories-2 {
   text-align: center;
@@ -737,3 +743,64 @@ body {
   font-size: medium;
   color: black;
 } */
+
+.card h4 {
+  color: #000000;
+}
+
+.col-4 hr {
+  border-color: #000000;
+}
+
+/* .col-4-hk {
+  background: #87ceeb;
+}
+
+.col-4-d {
+  background: #98fb98;
+}
+.col-4-k {
+  background: #f9ffa5;
+}
+.col-4-l {
+  background: #ffa5fc;
+} */
+
+.col-4-hk {
+  background: rgba(135, 206, 235, 0.3);
+}
+
+.col-4-d {
+  background: rgb(152, 251, 152, 0.3);
+}
+
+.col-4-k {
+  background: rgb(249, 255, 165, 0.3);
+}
+
+.col-4-l {
+  background: rgb(255, 165, 252, 0.3);
+}
+
+.col-4-hk h4 {
+  color: rgba(45, 106, 129, 1);
+}
+
+.col-4-d h4 {
+  /* color: rgba(102, 199, 102, 1); */
+  /* color: rgba(102, 199, 102, 1); */
+  color: rgba(77, 154, 77, 1);
+}
+
+.col-4-k h4 {
+  /* color: rgba(232, 239, 153, 1); */
+  /* color: rgba(232, 239, 153, 1); */
+  /* color: rgba(193, 201, 128, 1); */
+  color: rgba(156, 162, 104, 1);
+}
+
+.col-4-l h4 {
+  /* color: rgba(245, 153, 236, 1); */
+  /* color: rgba(245, 153, 236, 1); */
+  color: rgba(177, 92, 161, 1);
+}
