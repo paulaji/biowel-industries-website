@@ -77,12 +77,4 @@ animateWords();
 // }
 
 // ------------------------- for explore now ---------------------
-document.querySelector(".btn").addEventListener("click", function (event) {
-  event.preventDefault();
-
-  // Scroll to the target section
-  const targetSection = document.querySelector("#section");
-  targetSection.scrollIntoView({ behavior: "smooth" });
-});
-
-////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////

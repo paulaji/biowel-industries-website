@@ -1,0 +1,163 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: black; */
+  background: rgb(255, 252, 232);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next {
+  color: #ed1c24;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.swiper-button-prev {
+  color: #ed1c24;
+}
+
+/* .contact-info .col-2 {
+  background: gray;
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  color: #ed1c24;
+}
+
+.contact-info .lazy-load {
+  color: #fff;
+} */
+
+/* .contact-info {
+  border: 2px solid #ed1c24;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contact-info .col-2 {
+  background-color: rgb(243, 229, 171);
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: x-large;
+} */
+.contact-info {
+  border: 2px solid #ed1c24;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(243, 229, 171, 0.8);
+  box-shadow: 0 0 10px rgba(105, 32, 32, 0.3);
+}
+
+.contact-info .col-2 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: x-large;
+  /* border-radius: 100px; */
+  /* background-color: #ed1c24; */
+}
+
+.contact-info p {
+  color: black;
+  font-size: x-large;
+}
+
+/* .swiper-slide span {
+  font-size: smaller;
+} */
+
+.swiper-slide span {
+  font-size: smaller;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ed1c24;
+  color: white;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: justify;
+}
+
+.mySwiper .hk-button {
+  background-color: rgba(45, 106, 129, 1);
+}
+.mySwiper .d-button {
+  background-color: rgba(77, 154, 77, 1);
+}
+.mySwiper .k-button {
+  background-color: rgba(156, 162, 104, 1);
+}
+.mySwiper .l-button {
+  background-color: rgba(177, 92, 161, 1);
+}
+
+.view-all {
+  margin: 70px 0;
+}
+
+.swiper {
+  margin: 0;
+}
+
+.products-by-section {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+  color: darkgray;
+}
