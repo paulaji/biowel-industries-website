@@ -33,9 +33,9 @@
   }
 }
 
-.NB {
+/* .NB {
   animation: nav-load 2000ms ease-out;
-}
+} */
 
 /* .col-2 h1 {
   opacity: 0;
@@ -67,4 +67,12 @@
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+#preloader {
+  background: #ed1c24 url(images/loader.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
