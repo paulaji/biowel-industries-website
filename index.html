@@ -396,5 +396,33 @@
         loader.style.display = 'none';
       })
     </script>
+    <script>
+      // Get the span elements
+      var hkButton = document.querySelector(".hk-button");
+      var dButton = document.querySelector(".d-button");
+      var kButton = document.querySelector(".k-button");
+      var lButton = document.querySelector(".l-button");
+
+      // Function to change the text content
+      function updateTextContent() {
+        if (window.matchMedia("(max-width: 800px)").matches) {
+          hkButton.textContent = "1";
+          dButton.textContent = "2";
+          kButton.textContent = "3";
+          lButton.textContent = "4";
+        } else {
+          hkButton.textContent = "housekeeping";
+          dButton.textContent = "disinfection";
+          kButton.textContent = "kitchenclean";
+          lButton.textContent = "laundrycare";
+        }
+      }
+
+      // Initial call to update text content
+      updateTextContent();
+
+      // Add resize event listener to update text content
+      window.addEventListener("resize", updateTextContent);
+   </script>
   </body>
 </html>

@@ -71,6 +71,7 @@
 
 #preloader {
   background: #ed1c24 url(images/loader.gif) no-repeat center center;
+  /* background-size: 50%; */
   height: 100vh;
   width: 100%;
   position: fixed;
