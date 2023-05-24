@@ -1,18 +1,31 @@
-.contact-info .col-2 {
+/* .contact-info .col-2 {
   background: darkgray;
   display: flex;
   flex-direction: column;
   font-size: x-large;
   color: #ed1c24;
-  opacity: 0;
-  animation: fade-in 0.5s forwards;
 }
 
 .contact-info p {
   font-size: medium;
   color: black;
-  opacity: 0;
-  animation: fade-in 0.5s forwards;
+} */
+
+.contact-info .col-2 {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: #333333;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 8px;
 }
 
 @keyframes nav-load {
