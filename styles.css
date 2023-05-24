@@ -845,4 +845,6 @@ body {
   color: rgba(177, 92, 161, 1);
 }
 
-/* ---- row-2 ----*/
+.swiper {
+  text-align: center;
+}

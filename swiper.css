@@ -184,3 +184,27 @@
 .swiper-row {
   background: #ed1c24;
 }
+
+.captions {
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+  margin: 50px;
+}
+
+.heading {
+  color: #000;
+}
+.sub-heading {
+  color: #000;
+  font-weight: lighter;
+}
+
+.sub-heading-1 {
+  color: #ed1c24;
+  /* font-weight: lighter; */
+}
+
+.heading-1 {
+  color: #000;
+  font-weight: lighter;
+}
