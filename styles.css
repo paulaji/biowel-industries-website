@@ -104,8 +104,8 @@ p {
   display: inline-block;
   /* background: #ed1c24; */
   /* color: #fff; */
-  background: #fff;
-  color: #ed1c24;
+  color: #fff;
+  background: #ed1c24;
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 30px;
@@ -115,7 +115,7 @@ p {
 .btn:hover {
   /* background: #6e1b12; */
   /* background: rgb(179, 33, 17); */
-  background: rgb(255, 245, 225);
+  background: #ed1c23c5;
 }
 
 /* .header { */
@@ -241,6 +241,8 @@ p {
 .title::after {
   content: "";
   background: #ed1c24;
+  color: #ed1c24;
+  /* background: rgb(255, 245, 238); */
   width: 80px;
   height: 5px;
   border-radius: 5px;
@@ -431,7 +433,8 @@ ul {
 
 .dynamic-txts li {
   /* color: #ed1c24; */
-  color: #fff;
+  /* color: #fff; */
+  color: #ed1c24;
   list-style: none;
   /* position: relative; */
   /* top: 0; */
@@ -449,9 +452,11 @@ ul {
   height: 100%;
   width: 100%;
   /* border-left: 2px solid #ed1c24; */
-  border-left: 2px solid #ffffff;
+  border-left: 2px solid #ed1c24;
   left: 0;
-  background: #ed1c24;
+  /* background: #ed1c24; */
+  background: rgb(255, 245, 238);
+  /* background: #ed1c24; */
   animation: typing 5s steps(50) infinite;
   /* animation: slide 6s steps(4) infinite; */
 }
@@ -496,6 +501,7 @@ ul {
 .NB {
   flex: 1;
   text-align: right;
+  /* text-align: center; */
 }
 
 .NB nav ul {
@@ -614,7 +620,17 @@ ul {
   /* background: linear-gradient(to right, #a7c8db, #c3d9e5); */
   /* background: repeating-linear-gradient(to right, #d9f4d9, #e8f8e8 50px); */
   /* background: linear-gradient(to right, #ffcc99, #ffddbb); */
-  background: linear-gradient(to right, #e69966, #e6b387);
+  /* background: linear-gradient(to right, #e69966, #e6b387); */
+  background-image: url(backgroundimages/pexels-ben-mack-6775241.jpg);
+}
+
+body {
+  /* background-image: url(backgroundimages/pexels-ben-mack-6775241.jpg); */
+  /* background: rgb(255, 252, 232); */
+  background: #fffaf0;
+  /* background: rgb(255, 252, 232); */
+  /* background: rgb(255, 252, 232); */
+  /* background: #98fb98; */
 }
 
 .categories-2 img {
@@ -642,14 +658,17 @@ ul {
 
 .col-2 {
   margin-top: 15px;
-  background: #ed1c24;
+  background: rgb(255, 245, 238);
+  /* background: #fff; */
+  /* background: #ed1c24; */
   padding: 25px;
   text-align: center;
 }
 
 .dynamic-txts li h1 {
   /* color: #fff; */
-  color: rgb(255, 245, 238);
+  /* color: rgb(255, 245, 238); */
+  color: #ed1c24;
   list-style: none;
   font-weight: bolder;
 }
@@ -662,21 +681,24 @@ ul {
   /* color: rgb(245, 245, 220); might be good for thaazhathe font*/
   /* color: rgb(255, 245, 238); really good */
   /* color: rgb(243, 229, 171); might be good for thaazhathe font */
-  color: rgb(247, 231, 206);
+  /* color: rgb(247, 231, 206); */
+  /* color: #ff4c5c; */
+  color: #000000b9;
   font-weight: 100;
 }
 
 .col-2 p {
-  color: rgb(243, 229, 171);
+  /* color: rgb(243, 229, 171); */
+  color: #ff7888;
 }
-
-body {
-  /* color: rgb(248, 248, 255); */
-  background: rgb(255, 252, 232);
-  /* background: rgb(225, 222, 200); */
-  /* background: rgb(195, 192, 167); */
-  /* background: rgb(185, 176, 145); */
-}
+/* 
+/* body {
+  color: rgb(248, 248, 255); 
+  background: rgb(225, 222, 200);
+  background: rgb(195, 192, 167);
+  background: rgb(185, 176, 145);
+  background: #f2f2f2;
+} */
 
 /* .col-4 {
   background: #f2cda2;
@@ -733,7 +755,10 @@ body {
 }
 
 .header {
-  background-image: url(images/pexels-cottonbro-studio-3942924.jpg);
+  /* background-image: url(images/pexels-cottonbro-studio-3942924.jpg); */
+  background-image: url(backgroundimages/pexels-ben-mack-6775241.jpg);
+  /* background-image: url(backgroundimages/pexels-madison-inouye-1831234.jpg); */
+  /* background-image: url(backgroundimages/pexels-shonejai-1227515.jpg); */
 }
 
 /* .contact-info .col-2 {
@@ -772,27 +797,33 @@ body {
 } */
 
 .col-4-hk {
-  background: rgba(135, 206, 235, 0.3);
+  /* background: rgba(135, 206, 235, 0.3); */
+  background: #fafaff;
   /* margin: 0 5px 0 5px; */
 }
 
 .col-4-d {
-  background: rgb(152, 251, 152, 0.3);
+  /* background: rgb(152, 251, 152, 0.3); */
+  background: #fafaff;
   /* margin: 0 5px 0 5px; */
 }
 
 .col-4-k {
-  background: rgb(249, 255, 165, 0.3);
+  /* background: rgb(249, 255, 165, 0.3); */
+  background: #fafaff;
   /* margin: 0 5px 0 5px; */
 }
 
 .col-4-l {
-  background: rgb(255, 165, 252, 0.3);
+  /* background: rgb(255, 165, 252, 0.3); */
+  background: #fafaff;
+
   /* margin: 0 5px 0 5px; */
 }
 
 .col-4-hk h4 {
   color: rgba(45, 106, 129, 1);
+  /* color: #ed1c24; */
 }
 
 .col-4-d h4 {
@@ -812,4 +843,8 @@ body {
   /* color: rgba(245, 153, 236, 1); */
   /* color: rgba(245, 153, 236, 1); */
   color: rgba(177, 92, 161, 1);
+}
+
+.swiper {
+  text-align: center;
 }

@@ -7,10 +7,13 @@
   text-align: center;
   font-size: 18px;
   /* background: black; */
-  background: rgb(255, 252, 232);
+  /* background: rgb(255, 252, 232); */
+  /* background: #fffaf0; */
+  background: #ed1c24;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .swiper-slide img {
@@ -21,7 +24,7 @@
 }
 
 .swiper {
-  width: 100%;
+  width: 50%;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -34,7 +37,7 @@
 
 .mySwiper2 {
   height: 80%;
-  width: 100%;
+  width: 70%;
 }
 
 .mySwiper {
@@ -61,13 +64,17 @@
 }
 
 .swiper-button-next {
-  color: #ed1c24;
-  font-size: larger;
-  font-weight: bolder;
+  /* color: #fff; */
+  color: #000;
+  /* color: #ed1c24; */
+  /* font-size: larger;
+  font-weight: bolder; */
 }
 
 .swiper-button-prev {
-  color: #ed1c24;
+  /* color: #fff; */
+  color: #000;
+  /* color: #ed1c24; */
 }
 
 /* .contact-info .col-2 {
@@ -96,11 +103,11 @@
   font-size: x-large;
 } */
 .contact-info {
-  border: 2px solid #ed1c24;
-  border-radius: 10px;
+  /* border: 2px solid #ed1c24; */
+  /* border-radius: 10px; */
   padding: 20px;
-  background-color: rgba(243, 229, 171, 0.8);
-  box-shadow: 0 0 10px rgba(105, 32, 32, 0.3);
+  /* background-color: rgba(243, 229, 171, 0.8); */
+  box-shadow: 0 0 5px rgba(105, 32, 32, 0.3);
 }
 
 .contact-info .col-2 {
@@ -134,16 +141,28 @@
 }
 
 .mySwiper .hk-button {
-  background-color: rgba(45, 106, 129, 1);
+  /* background-color: rgba(45, 106, 129, 1); */
+  background-color: #fff;
+  color: rgba(45, 106, 129, 1);
+  border: 1px solid rgba(45, 106, 129, 1);
 }
 .mySwiper .d-button {
-  background-color: rgba(77, 154, 77, 1);
+  /* background-color: rgba(77, 154, 77, 1); */
+  background-color: #fff;
+  color: rgba(77, 154, 77, 1);
+  border: 1px solid rgba(77, 154, 77, 1);
 }
 .mySwiper .k-button {
-  background-color: rgba(156, 162, 104, 1);
+  /* background-color: rgba(156, 162, 104, 1); */
+  background-color: #fff;
+  color: rgba(156, 162, 104, 1);
+  border: 1px solid rgba(156, 162, 104, 1);
 }
 .mySwiper .l-button {
-  background-color: rgba(177, 92, 161, 1);
+  /* background-color: rgba(177, 92, 161, 1); */
+  background-color: #fff;
+  color: rgba(177, 92, 161, 1);
+  border: 1px solid rgba(177, 92, 161, 1);
 }
 
 .view-all {
@@ -160,4 +179,32 @@
   text-align: center;
   margin-bottom: 15px;
   color: darkgray;
+}
+
+.swiper-row {
+  background: #ed1c24;
+}
+
+.captions {
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+  margin: 50px;
+}
+
+.heading {
+  color: #000;
+}
+.sub-heading {
+  color: #000;
+  font-weight: lighter;
+}
+
+.sub-heading-1 {
+  color: #ed1c24;
+  /* font-weight: lighter; */
+}
+
+.heading-1 {
+  color: #000;
+  font-weight: lighter;
 }
