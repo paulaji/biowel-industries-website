@@ -6,7 +6,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #ed1c24;
+  /* background: #ed1c24; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +71,9 @@
 .contact-info {
   padding: 20px;
   box-shadow: 0 0 5px rgba(105, 32, 32, 0.3);
+  /* background-image: url(backgroundimages/pexels-madison-inouye-1831234.jpg); */
+  /* background: #fff; */
+  margin-bottom: 2px;
 }
 
 .contact-info .col-2 {
@@ -135,7 +138,8 @@
 }
 
 .swiper-row {
-  background: #ed1c24;
+  /* background: #ed1c24; */
+  background-image: url(backgroundimages/pexels-ben-mack-6775241.jpg);
 }
 
 .captions {
@@ -143,18 +147,94 @@
 }
 
 .heading {
-  color: #000;
+  color: #ed1c24;
+  font-size: 20px;
+  margin-top: 150px;
 }
 .sub-heading {
   color: #000;
   font-weight: lighter;
-}
-
-.sub-heading-1 {
-  color: #ed1c24;
+  font-size: 15px;
+  margin-bottom: 150px;
 }
 
 .heading-1 {
   color: #000;
   font-weight: lighter;
+  font-size: 20px;
+  margin-top: 120px;
+}
+
+.sub-heading-1 {
+  color: #ed1c24;
+  font-size: 30px;
+  margin-bottom: 120px;
+}
+
+.swiper-row {
+  margin-top: 200px;
+}
+
+.trademarksentence {
+  font-size: 10px;
+}
+
+.paul {
+  font-size: 10px;
+}
+
+.spanelement {
+  font-size: 100px;
+}
+
+.handsanitizing {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .categories-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    display: none;
+  }
+
+  .categories-2 .col-3 {
+    flex-basis: 50%;
+    padding: 10px; /* Adjust the padding value as per your preference */
+    box-sizing: border-box;
+  }
+
+  .categories-2 img {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    transform: scale(1);
+  }
+
+  .handsanitizing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .handsanitizing {
+    flex-basis: 50%;
+    padding: 10px; /* Adjust the padding value as per your preference */
+    box-sizing: border-box;
+    object-fit: cover;
+  }
+
+  .handsanitizingimg {
+    width: 100%;
+    /* height: auto; */
+    /* margin-top: 25px; */
+    transform: scale(1);
+  }
+
+  .spanelement {
+    font-size: 30px;
+  }
 }

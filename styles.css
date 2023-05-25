@@ -247,18 +247,22 @@ h4 {
 /* --------------------footer-------------------- */
 
 .footer {
-  background: #ed1c24;
+  /* background: #ed1c24; */
+  background-image: url(backgroundimages/pexels-ben-mack-6775241.jpg);
   color: #ffffff;
+  color: #333;
   font-size: 14px;
   padding: 60px 0 20px;
 }
 
 .footer p {
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #333;
 }
 
 .footer h3 {
-  color: #fff;
+  /* color: #fff; */
+  color: #333;
   margin-bottom: 20px;
 }
 
