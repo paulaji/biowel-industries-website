@@ -1,7 +1,5 @@
 ////////////////////////////////////////////////////////////////
 const words = [`"Hygienic"`];
-// const words = ["Safe", "Protected", "Hygienic", "Sanitary"];
-// const words = ["Hygienic", "Sanitary", "Protected"];
 let index = 0;
 
 function animateWords() {
@@ -20,61 +18,50 @@ function animateWords() {
 
 animateWords();
 
-//////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+//preloader
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
+////////////////////////////////////////////////////
+//changing names to 1, 2, 3, 4 when screensize is small
+// Get the span elements
+var hkButton = document.querySelector(".hk-button");
+var dButton = document.querySelector(".d-button");
+var kButton = document.querySelector(".k-button");
+var lButton = document.querySelector(".l-button");
 
-// // JavaScript to handle carousel functionality
-// const carousel = document.querySelector(".carousel");
-// const row = carousel.querySelector(".row-carousel");
+// Function to change the text content
+function updateTextContent() {
+  if (window.matchMedia("(max-width: 950px)").matches) {
+    hkButton.textContent = "1";
+    dButton.textContent = "2";
+    kButton.textContent = "3";
+    lButton.textContent = "4";
+  } else {
+    hkButton.textContent = "housekeeping";
+    dButton.textContent = "disinfection";
+    kButton.textContent = "kitchenclean";
+    lButton.textContent = "laundrycare";
+  }
+}
 
-// // Button event listeners
-// document.querySelector(".prev-btn").addEventListener("click", () => {
-//   slideCarousel("left");
-// });
+// Initial call to update text content
+updateTextContent();
 
-// document.querySelector(".next-btn").addEventListener("click", () => {
-//   slideCarousel("right");
-// });
+// Add resize event listener to update text content
+window.addEventListener("resize", updateTextContent);
+///////////////////////////////////////////////////
+//navbar collapse
+var MenuItems = document.getElementById("MenuItemsNB");
+MenuItems.style.maxHeight = "0px";
 
-// function slideCarousel(direction) {
-//   const cardWidth = carousel.querySelector(".col-4-carousel").offsetWidth;
-//   const cardMargin = parseInt(
-//     window.getComputedStyle(carousel.querySelector(".col-4-carousel"))
-//       .marginRight
-//   );
-//   const rowWidth = (cardWidth + cardMargin) * row.childElementCount;
-//   const visibleCards = Math.floor(
-//     carousel.offsetWidth / (cardWidth + cardMargin)
-//   );
-//   const shiftAmount =
-//     direction === "left" ? cardWidth + cardMargin : -(cardWidth + cardMargin);
-
-//   row.style.transform = `translateX(${shiftAmount}px)`;
-
-//   if (direction === "left") {
-//     row.appendChild(row.firstElementChild);
-//   } else {
-//     row.prepend(row.lastElementChild);
-//   }
-
-//   row.addEventListener(
-//     "transitionend",
-//     () => {
-//       row.style.transition = "none";
-//       row.style.transform = "translateX(0)";
-
-//       if (direction === "left") {
-//         row.prepend(row.lastElementChild);
-//       } else {
-//         row.appendChild(row.firstElementChild);
-//       }
-
-//       setTimeout(() => {
-//         row.style.transition = "transform 0.5s";
-//       });
-//     },
-//     { once: true }
-//   );
-// }
-
-// ------------------------- for explore now ---------------------
+function menutoggle() {
+  if (MenuItems.style.maxHeight == "0px") {
+    MenuItems.style.maxHeight = "200px";
+  } else {
+    MenuItems.style.maxHeight = "0px";
+  }
+}
 ////////////////////////////////////////////////////

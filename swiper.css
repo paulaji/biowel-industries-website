@@ -6,10 +6,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* background: black; */
-  /* background: rgb(255, 252, 232); */
-  /* background: #fffaf0; */
-  background: #ed1c24;
+  /* background: #ed1c24; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,50 +61,19 @@
 }
 
 .swiper-button-next {
-  /* color: #fff; */
   color: #000;
-  /* color: #ed1c24; */
-  /* font-size: larger;
-  font-weight: bolder; */
 }
 
 .swiper-button-prev {
-  /* color: #fff; */
   color: #000;
-  /* color: #ed1c24; */
 }
 
-/* .contact-info .col-2 {
-  background: gray;
-  display: flex;
-  flex-direction: column;
-  font-size: x-large;
-  color: #ed1c24;
-}
-
-.contact-info .lazy-load {
-  color: #fff;
-} */
-
-/* .contact-info {
-  border: 2px solid #ed1c24;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.contact-info .col-2 {
-  background-color: rgb(243, 229, 171);
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: x-large;
-} */
 .contact-info {
-  /* border: 2px solid #ed1c24; */
-  /* border-radius: 10px; */
   padding: 20px;
-  /* background-color: rgba(243, 229, 171, 0.8); */
   box-shadow: 0 0 5px rgba(105, 32, 32, 0.3);
+  /* background-image: url(backgroundimages/pexels-madison-inouye-1831234.jpg); */
+  /* background: #fff; */
+  margin-bottom: 2px;
 }
 
 .contact-info .col-2 {
@@ -115,18 +81,12 @@
   padding: 10px;
   margin-bottom: 10px;
   font-size: x-large;
-  /* border-radius: 100px; */
-  /* background-color: #ed1c24; */
 }
 
 .contact-info p {
   color: black;
   font-size: x-large;
 }
-
-/* .swiper-slide span {
-  font-size: smaller;
-} */
 
 .swiper-slide span {
   font-size: smaller;
@@ -141,25 +101,21 @@
 }
 
 .mySwiper .hk-button {
-  /* background-color: rgba(45, 106, 129, 1); */
   background-color: #fff;
   color: rgba(45, 106, 129, 1);
   border: 1px solid rgba(45, 106, 129, 1);
 }
 .mySwiper .d-button {
-  /* background-color: rgba(77, 154, 77, 1); */
   background-color: #fff;
   color: rgba(77, 154, 77, 1);
   border: 1px solid rgba(77, 154, 77, 1);
 }
 .mySwiper .k-button {
-  /* background-color: rgba(156, 162, 104, 1); */
   background-color: #fff;
   color: rgba(156, 162, 104, 1);
   border: 1px solid rgba(156, 162, 104, 1);
 }
 .mySwiper .l-button {
-  /* background-color: rgba(177, 92, 161, 1); */
   background-color: #fff;
   color: rgba(177, 92, 161, 1);
   border: 1px solid rgba(177, 92, 161, 1);
@@ -182,29 +138,103 @@
 }
 
 .swiper-row {
-  background: #ed1c24;
+  /* background: #ed1c24; */
+  background-image: url(backgroundimages/pexels-ben-mack-6775241.jpg);
 }
 
 .captions {
-  /* margin-top: 20px;
-  margin-bottom: 20px; */
   margin: 50px;
 }
 
 .heading {
-  color: #000;
+  color: #ed1c24;
+  font-size: 20px;
+  margin-top: 150px;
 }
 .sub-heading {
   color: #000;
   font-weight: lighter;
-}
-
-.sub-heading-1 {
-  color: #ed1c24;
-  /* font-weight: lighter; */
+  font-size: 15px;
+  margin-bottom: 150px;
 }
 
 .heading-1 {
   color: #000;
   font-weight: lighter;
+  font-size: 20px;
+  margin-top: 120px;
+}
+
+.sub-heading-1 {
+  color: #ed1c24;
+  font-size: 30px;
+  margin-bottom: 120px;
+}
+
+.swiper-row {
+  margin-top: 200px;
+}
+
+.trademarksentence {
+  font-size: 10px;
+}
+
+.paul {
+  font-size: 10px;
+}
+
+.spanelement {
+  font-size: 100px;
+}
+
+.handsanitizing {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .categories-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    display: none;
+  }
+
+  .categories-2 .col-3 {
+    flex-basis: 50%;
+    padding: 10px; /* Adjust the padding value as per your preference */
+    box-sizing: border-box;
+  }
+
+  .categories-2 img {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    transform: scale(1);
+  }
+
+  .handsanitizing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .handsanitizing {
+    flex-basis: 50%;
+    padding: 10px; /* Adjust the padding value as per your preference */
+    box-sizing: border-box;
+    object-fit: cover;
+  }
+
+  .handsanitizingimg {
+    width: 100%;
+    /* height: auto; */
+    /* margin-top: 25px; */
+    transform: scale(1);
+  }
+
+  .spanelement {
+    font-size: 30px;
+  }
 }
