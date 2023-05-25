@@ -41,7 +41,6 @@
         <ul id="MenuItemsNB">
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">All Products</a></li>
-          <!-- <li><a href="about.html">About</a></li> -->
           <li class="go-to"><a href="#contactinfo">Contact</a></li>
         </ul>
       </nav>
@@ -50,37 +49,15 @@
 
     <div class="header">
       <div class="container">
-        <!-- <div class="navbar"> -->
-        <!-- <div class="logo"> -->
-        <!-- <img -->
-        <!-- src="/images/biowelindlogoresized.png" -->
-        <!-- width="125px" -->
-        <!-- /> -->
-        <!-- </div> -->
-        <!-- <nav> -->
-        <!-- <ul id="MenuItems"> -->
-        <!-- <li><a href="">Home</a></li> -->
-        <!-- <li><a href="">Products</a></li> -->
-        <!-- <li><a href="">About</a></li> -->
-        <!-- <li><a href="">Contact</a></li> -->
-        <!-- <li><a href="">Account</a></li> -->
-        <!-- </ul> -->
-        <!-- </nav> -->
-        <!-- <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"/> -->
-        <!-- </div> -->
         <div class="row">
           <div class="col-2">
             <span><h1>We help keeping your space,</h1></span>
             <div class="wrapper">
               <ul class="dynamic-txts">
-                <!-- <li><h1>"Safe"</h1></li> -->
                 <li>
                   <h1><span id="word">Hygienic</span></h1>
                 </li>
-                <!-- <li><h1>"Sanitary"</h1></li> -->
-                <!-- <li><h1>"Protected"</h1></li> -->
               </ul>
-              <!-- <h1 class="static-txt"> 'Environments</h1> -->
             </div>
             <p>
               Providing comprehensive cleaning, disinfection, and
@@ -89,10 +66,6 @@
             </p>
             <a href="#section" class="btn">Explore Now &#8594;</a>
           </div>
-          <!-- <div class="col-2"> -->
-          <!-- <img src="/images/biowellogowithwhitebgresized2.jpg" /> -->
-          <!-- <img src="/images/biowelindlogoherotrial.png" /> -->
-          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -167,9 +140,6 @@
          "Good to Great"
        </h1>
        </div>
-      <!-- <small id="section"
-        >click on category heading to view product card</small
-      > -->
     </div>
    <div class="categories-2">
       <div class="small-container-1">
@@ -186,19 +156,6 @@
         </div>
       </div>
     </div>
-    <!-- ----new section---- -->
-    <!-- <div class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-2">
-          </div>
-          <div class="col-2">
-          </div>
-          </div>
-        </div>
-      </div> -->
-    <!-- end of new section -->
-      <!-- ---- view products by section ---- -->
       <div class="products-by-section">
         <div class="captions">       
           <h2 class="heading">
@@ -212,9 +169,6 @@
           >products by category &#8594;
           <hr
         /></span>
-        <!-- <small id="section"
-          >click on category heading to view product card</small
-        > -->
       </div>
       <!-- ---- swiper section ---- -->
       <div class="row swiper-row">
@@ -393,51 +347,5 @@
       });
     </script>
     <script src="script.js"></script>
-    <script>
-      var MenuItems = document.getElementById("MenuItemsNB");
-      MenuItems.style.maxHeight = "0px";
-
-      function menutoggle() {
-        if (MenuItems.style.maxHeight == "0px") {
-          MenuItems.style.maxHeight = "200px";
-        } else {
-          MenuItems.style.maxHeight = "0px";
-        }
-      }
-    </script>
-    <script>
-      var loader = document.getElementById("preloader");
-      window.addEventListener("load", function () {
-        loader.style.display = "none";
-      });
-    </script>
-    <script>
-      // Get the span elements
-      var hkButton = document.querySelector(".hk-button");
-      var dButton = document.querySelector(".d-button");
-      var kButton = document.querySelector(".k-button");
-      var lButton = document.querySelector(".l-button");
-
-      // Function to change the text content
-      function updateTextContent() {
-        if (window.matchMedia("(max-width: 950px)").matches) {
-          hkButton.textContent = "1";
-          dButton.textContent = "2";
-          kButton.textContent = "3";
-          lButton.textContent = "4";
-        } else {
-          hkButton.textContent = "housekeeping";
-          dButton.textContent = "disinfection";
-          kButton.textContent = "kitchenclean";
-          lButton.textContent = "laundrycare";
-        }
-      }
-
-      // Initial call to update text content
-      updateTextContent();
-
-      // Add resize event listener to update text content
-      window.addEventListener("resize", updateTextContent);
-    </script>
   </body>
 </html>
